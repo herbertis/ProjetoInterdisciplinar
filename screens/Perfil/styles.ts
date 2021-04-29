@@ -5,14 +5,13 @@ export const Container = styled.View`
 flex: 1;
 align-items: center;
 justify-content: center;
-padding: 70px 30px;
+padding: 130px 30px;
 `;
 
 export const Title = styled.Text`
 font-size: 24px;
-color: #f4ede8;
-
-margin: 10px 0 24px;
+color: #1d7925;
+margin: 10px 0px 30px;
 `;
 
 export const BackToSignIn = styled.TouchableOpacity`

@@ -36,12 +36,3 @@ font-size: 18px;
 
 margin-left: 10px;
 `;
-export const UserAvatar = styled.Image`
-width: 150px;
-height: 150px;
-
-align-items: center;
-background: #fff;
-border-color: #fff;
-border-radius: 100px;
-`;

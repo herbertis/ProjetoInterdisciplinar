@@ -15,9 +15,10 @@ export const TextInput = styled.TextInput`
 flex: 1;
 color:  #1d7925;
 font-size: 16px;
+text-align: center;
 
 `;
 
 export const Icon = styled (FeatherIcon)`
-margin-right: 7px;
+margin-left: 30px;
 `;
