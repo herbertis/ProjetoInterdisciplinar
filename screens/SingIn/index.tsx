@@ -3,7 +3,7 @@ import { Image, View, ScrollView ,KeyboardAvoidingView, Platform} from 'react-na
 import { Ionicons }from '@expo/vector-icons';
 import {useNavigation} from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import api from '../services/api';
+import api from '../../services/api';
 
 
 import Input from '../../components/Input';
