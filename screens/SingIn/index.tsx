@@ -24,8 +24,9 @@ const SingIn: React.FC = () => {
 const navigation = useNavigation ();
 
 const [login, setLogin] = useState(0);
-const addHandler = () => setLogin(login +1);
-const subtracHandler = () => setLogin(login -1);
+const login=()=>{
+  console.log('função de login')
+}
 
 
 api
