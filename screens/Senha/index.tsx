@@ -19,7 +19,7 @@ import {
   BackToSignInText, 
 } from './styles';
 
-const SingUp: React.FC = () => {
+const Senha: React.FC = () => {
   const navigation= useNavigation();
   return (
     <>
@@ -33,32 +33,30 @@ const SingUp: React.FC = () => {
          
        <Container>
        <View>
-       <Title>Primeros Passos</Title>
+       <Title>Confirmar Senha</Title>
        </View>
 
        <View>
-       <Title>Olá Aluno(a)! </Title>
+       <Title>Para sua segurança crie uma senha para seu login.</Title>
        </View> 
 
-       <View>
-       <Title>Seja bem-vido a carterinha de estudande do Ifsuldeminas, primeiro passao é muito simples, basta você inserir seu RA ou Número de matrícula.</Title>
-       </View> 
+       <Input2 name="name" icon="lock" placeholder="Digite sua senha" />
+       <Input2 name="name" icon="lock" placeholder="Confirme sua senha" />
 
-       <Input2 name="name" icon="user" placeholder="RA ou número de matricula " />
-       <Button onPress={()=> navigation.navigate('Perfil')}>
-       PRÓXIMO PASSO
+       <Button onPress={()=> navigation.navigate('Carterinha')}>
+       Confirmar a senha.
        </Button>
        </Container>
        </ScrollView>
        </KeyboardAvoidingView>
  
-        <BackToSignIn onPress={()=>navigation.navigate('SingIn')} >
+        <BackToSignIn onPress={()=>navigation.navigate('Perfil')} >
 
         <Ionicons name="arrow-back" size={20} color="#1d7925" /> 
-        <BackToSignInText>Voltar para Login</BackToSignInText>
+        <BackToSignInText>Voltar para Perfil</BackToSignInText>
         </ BackToSignIn>
   </>
   );
 };
 
-export default SingUp;
+export default Senha;

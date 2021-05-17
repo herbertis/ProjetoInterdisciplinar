@@ -5,22 +5,19 @@ import {
   KeyboardAvoidingView,
   Platform, 
 } from 'react-native';
+import {Ionicons} from '@expo/vector-icons';
 import {StatusBar} from 'expo-status-bar';
 import {useNavigation} from '@react-navigation/native';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import Avatar from '../../assets/camera.png';
 
 import { 
   Container,
   Title,
-  BackToSignIn,
-  BackToSignInText, 
-  UserAvatar,
 } from './styles';
 
-const SingUp: React.FC = () => {
+const Perfil: React.FC = () => {
   const navigation= useNavigation();
   return (
     <>
@@ -36,22 +33,22 @@ const SingUp: React.FC = () => {
        <View>
        <Title>Segundo Passo</Title>
        </View> 
-       
-       <View name="name" icon="user" ></View>
 
        <View>
-       <Title>Confirme seus dados</Title>
+       <Title>Aluno! Nesta etapa é para confirma seus dados de Matricula</Title>
        </View> 
 
        <Input name="name" icon="user" placeholder="Nome Completo" />
-       <Input name="archive" icon="archive" placeholder="Ra ou Matricula" />
+       <Input name="folder" icon="folder" placeholder="Ra ou Matricula" />
        <Input name="phone" icon="phone" placeholder="Telefone"/>
        <Input name="email" icon="mail" placeholder="E-mail" />
-       <Input name="password" icon="lock" placeholder="Senha"/>
+       <Input name="book-open" icon="book-open" placeholder="cursando"/>
+       <Input name="calendar" icon="calendar" placeholder="validade"/>
+       
       
 
-       <Button onPress={()=> navigation.navigate("")}>
-       ENVIAR
+     <Button onPress={()=> navigation.navigate("Senha")}>
+      Confirmo
        </Button>
        </Container>
        </ScrollView>
@@ -62,4 +59,4 @@ const SingUp: React.FC = () => {
   );
 };
 
-export default SingUp;
+export default Perfil;

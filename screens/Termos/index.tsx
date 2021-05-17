@@ -30,7 +30,7 @@ const navigation = useNavigation ();
      <Image source={logoImg} />
 
        <View>
-       <Title>Faca seu login</Title>
+       <Title>Termos e Codições</Title>
        </View> 
        <ScrollView>
        <View>
